@@ -1,0 +1,13 @@
+<div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="2vh">
+  <mat-toolbar color="primary">
+    <span>Estacionamiento ceiba</span>
+  </mat-toolbar>
+
+  <div fxLayout="row" fxLayoutAlign="space-around start" fxLayoutGap="2vw">
+    <app-lista-vehiculos
+      fxFlex='60'
+      [vehiculos]="vehiculosIngresados"
+    ></app-lista-vehiculos>
+    <mat-card fxFlex='35'></mat-card>
+  </div>
+</div>
