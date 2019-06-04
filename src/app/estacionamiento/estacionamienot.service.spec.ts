@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EstacionamientoService } from './estacionamienot.service';
+import { EstacionamientoService } from './estacionamiento.service';
 
 describe('EstacionamienotService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

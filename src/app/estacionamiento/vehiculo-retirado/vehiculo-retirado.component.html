@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Vehiculo retirado</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content
+    fxLayout="column"
+    fxLayoutAlign="start stretch"
+    *ngIf="vehiculoRetirado"
+  >
+    <span><strong>Placa: </strong>{{ vehiculoRetirado.placa }}</span>
+
+    <span><strong>Tipo: </strong>{{ vehiculoRetirado.tipo }}</span>
+    <span
+      ><strong>Hora ingreso: </strong
+      >{{ vehiculoRetirado.horaIngreso | date: 'medium' }}</span
+    >
+    <span
+      ><strong>Hora salida: </strong
+      >{{ vehiculoRetirado.horaSalida | date: 'medium' }}</span
+    >
+    <span
+      ><strong>Costo: </strong>{{ vehiculoRetirado.costoEstacionamiento }}</span
+    >
+  </mat-card-content>
+</mat-card>

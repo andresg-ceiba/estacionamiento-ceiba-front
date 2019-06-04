@@ -1,6 +1,3 @@
-enum TipoVehiculo {
-  MOTO,
-  CARRO
-}
+const TipoVehiculo = ['MOTO', 'CARRO'];
 
 export default TipoVehiculo;

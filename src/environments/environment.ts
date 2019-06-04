@@ -8,7 +8,7 @@ export const environment = {
     baseUrl: 'http://localhost:8080/',
     consultarVehiculos: 'vehiculos',
     registrarVehiculo: 'vehiculos/registrar',
-    RetirarVehciulo: 'vehiculos/{placa}/salir'
+    retirarVehiculo: 'vehiculos/{placa}/salir'
   }
 };
 

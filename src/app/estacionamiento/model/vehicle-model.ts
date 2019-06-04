@@ -2,7 +2,7 @@ import TipoVehiculo from './tipo-vehiculo';
 
 class Vehiculo {
   placa: string;
-  tipo: TipoVehiculo;
+  tipo: string;
   horaIngreso: Date;
   cilindraje: number;
   horaSalida: Date;

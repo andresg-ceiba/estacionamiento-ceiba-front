@@ -3,11 +3,26 @@
     <span>Estacionamiento ceiba</span>
   </mat-toolbar>
 
-  <div fxLayout="row" fxLayoutAlign="space-around start" fxLayoutGap="2vw">
+  <div
+    fxLayout="column"
+    fxLayoutAlign="start stretch"
+    fxLayout.gt-sm="row wrap"
+    fxLayoutAlign.gt-sm="center stretch"
+    fxLayoutGap="2% grid"
+    class="contenedor-estacionamiento"
+  >
     <app-lista-vehiculos
-      fxFlex='60'
+      fxFlex="0 1 60"
       [vehiculos]="vehiculosIngresados"
+      (retirarVehiculo)="retirarVehiculo($event)"
     ></app-lista-vehiculos>
-    <mat-card fxFlex='35'></mat-card>
+    <app-formulario-ingreso
+      fxFlex
+      (ingresarVehiculo)="ingresarVehiculo($event)"
+    ></app-formulario-ingreso>
+    <app-vehiculo-retirado
+      fxFlex="0 1 60"
+      [vehiculoRetirado]="vehiculoRetirado"
+    ></app-vehiculo-retirado>
   </div>
 </div>
